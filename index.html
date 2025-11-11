@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <title>Roni — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roni — portfolio, projektit ja yhteystiedot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#38bdf8; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI; background:var(--bg); color:var(--text); }
+    .wrap { max-width:960px; margin:0 auto; padding:32px; }
+    header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+    nav a { color:var(--muted); text-decoration:none; margin-left:16px; }
+    nav a:hover { color:var(--accent); }
+    h1 { margin:0 0 8px; font-size:28px; }
+    .tag { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+    .card { background:var(--card); border:1px solid #1f2937; border-radius:12px; padding:16px; }
+    .card h3 { margin:0 0 8px; font-size:18px; }
+    .card p { margin:0 0 12px; color:var(--muted); }
+    .footer { margin-top:32px; color:var(--muted); font-size:14px; }
+    a.btn { display:inline-block; padding:8px 12px; border:1px solid #374151; border-radius:8px; color:var(--text); text-decoration:none; }
+    a.btn:hover { border-color:var(--accent); color:var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Roni</h1>
+        <div class="tag">Software developer • Vantaa, Finland</div>
+      </div>
+      <nav>
+        <a href="#projects">Projektit</a>
+        <a href="#about">Minusta</a>
+        <a href="#contact">Yhteys</a>
+      </nav>
+    </header>
+
+    <section id="hero" class="card">
+      <h2>Tervetuloa portfoliooni</h2>
+      <p>Rakennan moderneja web-sovelluksia. Pidän selkeästä koodista, käytettävyydestä ja vahvasta toteutuksesta.</p>
+      <a class="btn" href="#projects">Katso projekteja</a>
+    </section>
+
+    <section id="projects" style="margin-top:16px;">
+      <h2>Projektit</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Projektin nimi</h3>
+          <p>Kuvaus kehitetystä ratkaisusta, teknologiat ja rooli.</p>
+          <a class="btn" href="https://github.com/youruser/yourrepo" target="_blank" rel="noopener">Repo</a>
+        </article>
+        <article class="card">
+          <h3>Toinen projekti</h3>
+          <p>Lyhyt tiivistelmä, demo-linkki tai kuvakaappaus myöhemmin.</p>
+          <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:16px;">
+      <h2>Minusta</h2>
+      <p>Lyhyt bio: osaamisalueet, kiinnostukset, käytetyt teknologiat (esim. TypeScript, React, Node, Azure).</p>
+    </section>
+
+    <section id="contact" style="margin-top:16px;">
+      <h2>Yhteys</h2>
+      <p>Sähköposti: <a href="mailto:etunimi.sukunimi@example.com">etunimi.sukunimi@example.com</a> • LinkedIn: <a href="#" target="_blank" rel="noopener">Profiili</a></p>
+    </section>
+
+    <footer class="footer">
+      © <span id="y"></span> Roni. Rakennettu GitHub Pagesilla.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
