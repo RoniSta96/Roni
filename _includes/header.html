@@ -8,7 +8,12 @@
     <a href="{{ site.baseurl }}/fi/about.html">Tietoa</a> •
     <a href="{{ site.baseurl }}/fi/contact.html">Yhteystiedot</a>
     <span style="margin-left:20px;">
-      <strong>Suomi</strong> | <a href="{{ site.baseurl }}/en/{{ page_name }}">English</a>
+      <strong>🇫🇮 Suomi</strong> |
+      {% if page_name == "" or page_name == "index.html" %}
+        <a href="{{ site.baseurl }}/en/">🇬🇧 English</a>
+      {% else %}
+        <a href="{{ site.baseurl }}/en/{{ page_name }}">🇬🇧 English</a>
+      {% endif %}
     </span>
   {% else %}
     <a href="{{ site.baseurl }}/en/">Home</a> •
@@ -16,7 +21,12 @@
     <a href="{{ site.baseurl }}/en/about.html">About</a> •
     <a href="{{ site.baseurl }}/en/contact.html">Contact</a>
     <span style="margin-left:20px;">
-      <a href="{{ site.baseurl }}/fi/{{ page_name }}">Suomi</a> | <strong>English</strong>
+      {% if page_name == "" or page_name == "index.html" %}
+        <a href="{{ site.baseurl }}/fi/">🇫🇮 Suomi</a>
+      {% else %}
+        <a href="{{ site.baseurl }}/fi/{{ page_name }}">🇫🇮 Suomi</a>
+      {% endif %}
+      | <strong>🇬🇧 English</strong>
     </span>
   {% endif %}
 </nav>
