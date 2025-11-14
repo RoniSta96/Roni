@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-{% include header-en.html %}
+{% include header.html %}
 
 # Welcome to my portfolio
 
