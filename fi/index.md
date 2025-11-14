@@ -2,7 +2,7 @@
 layout: default
 title: Etusivu
 ---
-{% include header-fi.html %}
+{% include header.html %}
 
 # Welcome to my portfolio
 
