@@ -7,10 +7,9 @@ title: Yhteystiedot
 
 Feel free to reach out if you’d like to collaborate, discuss projects, or just say hello.
 
-- **Email:** [firstname.lastname@example.com](mailto:firstname.lastname@example.com)  
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)  
-- **GitHub:** [github.com/youruser](https://github.com/youruser)  
-- **Twitter/X:** [@yourhandle](https://twitter.com/yourhandle)
+- **Sähköposti:** [ronianttoni@gmail.com](mailto:ronianttoni@gmail.com)  
+- **LinkedIn:** [Roni Ståhl](https://www.linkedin.com/in/roni-ståhl-/)  
+- **GitHub:** [github.com/RoniSta96/](https://github.com/RoniSta96/)  
 
 ---
 
