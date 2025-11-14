@@ -2,7 +2,7 @@
 layout: default
 title: Tietoa
 ---
-{% include header.html %}
+{% include header-fi.html %}
 # About Me
 
 I am a software developer based in Vantaa, Finland.  
