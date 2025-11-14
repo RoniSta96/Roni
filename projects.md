@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 ---
-
+{% include header.html %}
 # Projects
 
 Here are some of my highlighted works:
