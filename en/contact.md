@@ -9,7 +9,7 @@ Feel free to reach out if you’d like to collaborate, discuss projects, or just
 
 - **Email:** [ronianttoni@gmail.com](mailto:ronianttoni@gmail.com)  
 - **LinkedIn:** [Roni Ståhl](https://www.linkedin.com/in/roni-ståhl-/)  
-- **GitHub:** [github.com/https://github.com/RoniSta96/](https://github.com/RoniSta96/)  
+- **GitHub:** [github.com/RoniSta96/](https://github.com/RoniSta96/)  
 
 ---
 
