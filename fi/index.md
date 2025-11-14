@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Home
+title: Etusivu
 ---
 {% include header-fi.html %}
 
 # Welcome to my portfolio
 
-I build modern web applications and enjoy working with clean code, usability, and strong implementation.
+Minä buildaan modern web applications and enjoy working with clean code, usability, and strong implementation.
 
 ## Projects
 - **Project 1** — Short description, technologies used, [GitHub link](https://github.com/youruser/project1)
