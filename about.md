@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-
+{% include header.html %}
 # About Me
 
 I am a software developer based in Vantaa, Finland.  
