@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 ---
-
+{% include header.html %}
 # Contact
 
 Feel free to reach out if you’d like to collaborate, discuss projects, or just say hello.
