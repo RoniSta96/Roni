@@ -23,23 +23,18 @@
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
+    
+<header class="page-header" role="banner">
+  <h1 class="project-name">{{ page.title | default: site.title }}</h1>
+  <h2 class="project-tagline">{{ page.description | default: site.description }}</h2>
 
-  <header class="page-header" role="banner">
-  <!-- Theme branding -->
-  <h1 class="project-name">
-    {{ page.title | default: site.title | default: site.github.repository_name }}
-  </h1>
-  <h2 class="project-tagline">
-    {{ page.description | default: site.description | default: site.github.project_tagline }}
-  </h2>
-
-  <!-- Custom navigation with language switcher -->
   {% if page.url contains '/fi/' %}
     {% include header-fi.html %}
   {% else %}
     {% include header-en.html %}
   {% endif %}
 </header>
+
 
 
     <main id="content" class="main-content" role="main">
