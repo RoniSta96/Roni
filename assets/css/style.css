@@ -58,3 +58,22 @@
     display: block;
   }
 }
+
+.site-nav a {
+  padding: 6px 12px;
+  margin: 0 4px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.site-nav a:hover {
+  background: #eee;
+}
+
+.site-nav a.active {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
