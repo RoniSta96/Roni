@@ -1,16 +1,16 @@
 {% assign page_name = page.url | split: '/' | last %}
 
-<nav class="navbar">
-  <a href="{{ site.baseurl }}/en/" class="{% if page_name == "" or page_name == "index.html" or page_name == "en" %}active{% endif %}">Home</a>
-  <a href="{{ site.baseurl }}/en/projects.html" class="{% if page_name == "projects.html" %}active{% endif %}">Projects</a>
-  <a href="{{ site.baseurl }}/en/about.html" class="{% if page_name == "about.html" %}active{% endif %}">About</a>
-  <a href="{{ site.baseurl }}/en/contact.html" class="{% if page_name == "contact.html" %}active{% endif %}">Contact</a>
+<nav class="site-nav">
+  <a href="{{ site.baseurl }}/fi/" class="{% if page_name == "" or page_name == "index.html" or page_name == "fi" %}active{% endif %}">Etusivu</a>
+  <a href="{{ site.baseurl }}/fi/projects.html" class="{% if page_name == "projects.html" %}active{% endif %}">Projektit</a>
+  <a href="{{ site.baseurl }}/fi/about.html" class="{% if page_name == "about.html" %}active{% endif %}">Tietoa</a>
+  <a href="{{ site.baseurl }}/fi/contact.html" class="{% if page_name == "contact.html" %}active{% endif %}">Yhteystiedot</a>
   <span class="lang-switch">
-    {% if page_name == "" or page_name == "index.html" or page_name == "en" %}
-      <a href="{{ site.baseurl }}/fi/">🇫🇮 Suomi</a>
+    <strong>🇫🇮 Suomi</strong> |
+    {% if page_name == "" or page_name == "index.html" or page_name == "fi" %}
+      <a href="{{ site.baseurl }}/en/">🇬🇧 English</a>
     {% else %}
-      <a href="{{ site.baseurl }}/fi/{{ page_name }}">🇫🇮 Suomi</a>
+      <a href="{{ site.baseurl }}/en/{{ page_name }}">🇬🇧 English</a>
     {% endif %}
-    | <strong>🇬🇧 English</strong>
   </span>
 </nav>
