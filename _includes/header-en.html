@@ -1,11 +1,11 @@
 {% assign page_name = page.url | split: '/' | last %}
 
-<nav style="text-align:center; margin-bottom:20px;">
-  <a href="{{ site.baseurl }}/en/">Home</a> •
-  <a href="{{ site.baseurl }}/en/projects.html">Projects</a> •
-  <a href="{{ site.baseurl }}/en/about.html">About</a> •
-  <a href="{{ site.baseurl }}/en/contact.html">Contact</a>
-  <span style="margin-left:20px;">
+<nav class="navbar">
+  <a href="{{ site.baseurl }}/en/" class="{% if page_name == "" or page_name == "index.html" or page_name == "en" %}active{% endif %}">Home</a>
+  <a href="{{ site.baseurl }}/en/projects.html" class="{% if page_name == "projects.html" %}active{% endif %}">Projects</a>
+  <a href="{{ site.baseurl }}/en/about.html" class="{% if page_name == "about.html" %}active{% endif %}">About</a>
+  <a href="{{ site.baseurl }}/en/contact.html" class="{% if page_name == "contact.html" %}active{% endif %}">Contact</a>
+  <span class="lang-switch">
     {% if page_name == "" or page_name == "index.html" or page_name == "en" %}
       <a href="{{ site.baseurl }}/fi/">🇫🇮 Suomi</a>
     {% else %}
