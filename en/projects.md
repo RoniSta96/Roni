@@ -2,7 +2,7 @@
 layout: default
 title: Projects
 ---
-{% include header-en.html %}
+
 # Projects
 
 Here are some of my highlighted works:
