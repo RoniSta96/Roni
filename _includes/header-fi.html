@@ -1,6 +1,6 @@
 {% assign page_name = page.url | split: '/' | last %}
 
-<nav class="navbar">
+<nav class="site-nav">
   <a href="{{ site.baseurl }}/fi/" class="{% if page_name == "" or page_name == "index.html" or page_name == "fi" %}active{% endif %}">Etusivu</a>
   <a href="{{ site.baseurl }}/fi/projects.html" class="{% if page_name == "projects.html" %}active{% endif %}">Projektit</a>
   <a href="{{ site.baseurl }}/fi/about.html" class="{% if page_name == "about.html" %}active{% endif %}">Tietoa</a>
