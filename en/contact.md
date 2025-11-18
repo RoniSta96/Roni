@@ -2,7 +2,7 @@
 layout: default
 title: Contact
 ---
-{% include header-en.html %}
+
 # Contact
 
 Feel free to reach out if you’d like to collaborate, discuss projects, or just say hello.
