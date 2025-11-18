@@ -1,1 +1,38 @@
 
+/* Custom navigation styles for site-nav */
+.site-nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.site-nav a {
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  color: #fff; /* keep Cayman’s white text */
+  background-color: #159957; /* Cayman’s green accent */
+}
+
+.site-nav a:hover {
+  background-color: #127a45; /* darker green on hover */
+}
+
+.site-nav a.active {
+  background-color: #115c33; /* even darker for active page */
+  font-weight: bold;
+}
+
+.lang-switch {
+  margin-left: 12px;
+  font-size: 0.9em;
+}
+
+.lang-switch a {
+  background: none;
+  color: #fff;
+  padding: 0;
+}
