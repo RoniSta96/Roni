@@ -3,18 +3,18 @@ layout: default
 title: Etusivu
 ---
 
-# Welcome to my portfolio
+# Tervetuloa portfolioon
 
-Minä buildaan modern web applications and enjoy working with clean code, usability, and strong implementation.
+Meitsi tekee sitä ja sun tätä
 
-## Projects
-- **Project 1** — Short description, technologies used, [GitHub link](https://github.com/youruser/project1)
-- **Project 2** — Short description, demo link
+## Projektit
+- **Projekti 1** — Short description, technologies used, [GitHub link](https://github.com/youruser/project1)
+- **Projekti 2** — Short description, demo link
 
-## About Me
+## Minusta
 I am a software developer based in Vantaa, Finland. My main interests are front‑end development, cloud services, and creating user‑friendly solutions.  
 Technologies I work with: TypeScript, React, Node.js, Azure.
 
-## Contact
+## Yhteystiedot
 - Email: [firstname.lastname@example.com](mailto:firstname.lastname@example.com)  
 - LinkedIn: [Profile](https://linkedin.com/in/yourprofile)
