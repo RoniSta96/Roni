@@ -2,7 +2,7 @@
 layout: default
 title: Projektit
 ---
-{% include header-fi.html %}
+
 # Projects
 
 Here are some of my highlighted works:
