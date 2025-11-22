@@ -3,3 +3,6 @@ description: My projects and work
 theme: jekyll-theme-cayman
 baseurl: "/Roni"
 
+collections:
+  projects:
+    output: true
