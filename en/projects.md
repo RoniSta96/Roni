@@ -1,20 +1,20 @@
 ---
 layout: default
 title: Projects
+description: My projects and work
 ---
 
-# Projects
-
-Here are some of my highlighted works:
-
-- **Project 1**  
-  A short description of the project, the technologies used, and your role.  
-  [View on GitHub](https://github.com/youruser/project1)
-
-- **Project 2**  
-  A short description, demo link, or screenshot.  
-  [Live Demo](https://example.com/demo)
-
-- **Project 3**  
-  Another project with a brief summary.  
-  [Repository](https://github.com/youruser/project3)
+{% assign grouped = site.projects | group_by: "category" %}
+{% for group in grouped %}
+  <h2>{{ group.name }}</h2>
+  <ul>
+    {% for project in group.items %}
+      <li>
+        <strong>{{ project.title }}</strong> – {{ project.description }}
+        {% if project.link %}
+          <a href="{{ project.link }}">View</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
