@@ -1,11 +1,11 @@
-/* Base nav layout (unchanged for desktop) */
+/* Base nav layout */
 .site-nav {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-} 
+}
 
 /* Nav links */
 .site-nav a {
@@ -45,47 +45,60 @@
   text-decoration: underline;
 }
 
-/* Mobile fix: shrink text and padding to prevent wrapping or scroll */
+/* Mobile navigation fix */
 @media (max-width: 480px) {
   .site-nav {
-    flex-wrap: nowrap;
-    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
   }
 
   .site-nav a {
-    font-size: 0.8rem;
-    padding: 4px 8px;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    width: 100%;
+    text-align: center;
   }
 
   .lang-switch {
-    font-size: 0.8em;
-    gap: 4px;
+    margin-top: 0.5rem;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  .page-header {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .project-name,
+  .project-tagline {
+    font-size: 1.2rem;
   }
 }
 
-
 /* Floating sticky back button */
 .project-detail {
-  position: relative; /* ensures sticky positioning works inside article */
+  position: relative;
 }
 
 .project-detail .back-button {
   position: sticky;
-  top: 1rem;          /* distance from top of viewport */
-  left: 1rem;         /* distance from left of container */
+  top: 1rem;
+  left: 1rem;
   z-index: 10;
 }
 
 .project-detail .back-button a {
   display: inline-block;
-  background-color: #0366d6; /* Cayman theme blue */
+  background-color: #0366d6;
   color: #fff;
   padding: 0.3em 0.7em;
   border-radius: 4px;
   font-size: 0.8em;
   text-decoration: none;
   font-weight: 500;
-  opacity: 0.6;       /* semi-transparent by default */
+  opacity: 0.6;
   transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
@@ -95,8 +108,8 @@
 }
 
 .project-detail .back-button a:hover {
-  opacity: 1;         /* fully visible on hover */
-  background-color: #024ea2; /* darker hover */
+  opacity: 1;
+  background-color: #024ea2;
 }
 
 /* Animated gradient background for Cayman header */
@@ -114,59 +127,7 @@
   100% { background-position: 0% 50%; }
 }
 
-.projects-list {
-  list-style: none;
-  padding: 0;
-}
-
-.projects-list li {
-  margin: 0.5rem 0;
-}
-
-.project-card {
-  display: block;
-  padding: 1rem;
-  border-radius: 6px;
-  background-color: #f9f9f9;
-  color: inherit;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  background-color: #f0fdf4; /* subtle green tint */
-}
-
-.project-card {
-  display: block;
-  padding: 1rem;
-  border-radius: 6px;
-  background-color: #f9f9f9;
-  color: inherit;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  background-color: #f0fdf4; /* subtle tint */
-}
-
-.projects-list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.projects-list li {
-  margin: 0; /* grid handles spacing */
-}
-
+/* Project card grid layout */
 .projects-list {
   list-style: none;
   padding: 0;
@@ -193,5 +154,5 @@
 .project-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  background-color: #f0fdf4; /* subtle tint */
+  background-color: #f0fdf4;
 }
