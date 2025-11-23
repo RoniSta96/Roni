@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Etusivu
+description: Roni Ståhl Portfolio
 ---
 
 # Tervetuloa portfoliooni
