@@ -3,9 +3,9 @@ layout: default
 title: Yhteystiedot
 ---
 
-# Contact
+# Yhteystiedot
 
-Feel free to reach out if you’d like to collaborate, discuss projects, or just say hello.
+Perehtykää projekteihini ja ottakaa rohkeasti yhteyttä! Olen avoin erilaisille työ- ja yhteistyötarjouksille, tai projekteille.
 
 - **Sähköposti:** [ronianttoni@gmail.com](mailto:ronianttoni@gmail.com)  
 - **LinkedIn:** [Roni Ståhl](https://www.linkedin.com/in/roni-ståhl-/)  
@@ -13,4 +13,4 @@ Feel free to reach out if you’d like to collaborate, discuss projects, or just
 
 ---
 
-You can also connect with me on professional networks or follow my open‑source work on GitHub.
+Muistakaa seurata minua LinkedInissä, seuraan aina takaisin!
