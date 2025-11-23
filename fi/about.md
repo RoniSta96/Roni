@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Tietoa
+description: IT-moniosaaja
 ---
 
 # Vähän minusta
