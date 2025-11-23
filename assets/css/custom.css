@@ -1,18 +1,21 @@
-/* Custom navigation styles for site-nav */
 .site-nav {
   margin-top: 1rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;       /* prevent wrapping to a second line */
+  justify-content: space-around;
   gap: 8px;
+  overflow-x: auto;        /* allow horizontal scroll if too tight */
 }
 
 .site-nav a {
+  flex: 1 1 auto;          /* let items shrink to fit */
+  text-align: center;
+  min-width: 0;            /* allow flexbox to shrink text properly */
   padding: 6px 12px;
   text-decoration: none;
   border-radius: 4px;
   transition: background 0.3s ease;
-  color: #fff; /* keep Cayman’s white text */
+  color: #fff;             /* Cayman’s white text */
   background-color: #159957; /* Cayman’s green accent */
 }
 
@@ -24,6 +27,7 @@
   background-color: #115c33; /* even darker for active page */
   font-weight: bold;
 }
+
 
 .lang-switch {
   margin-left: 12px;
