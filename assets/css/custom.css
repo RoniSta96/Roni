@@ -1,49 +1,40 @@
-/* Navigation bar */
+/* Base nav layout (unchanged for desktop) */
 .site-nav {
   margin-top: 1rem;
   display: flex;
-  flex-wrap: wrap;          /* allow wrapping if absolutely needed */
-  justify-content: center;  /* centered row on desktop */
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
-  overflow-x: hidden;       /* prevent side scrolling */
 }
 
+/* Nav links */
 .site-nav a {
   padding: 6px 12px;
   text-decoration: none;
   border-radius: 4px;
   transition: background 0.3s ease;
-  color: #fff;               /* Cayman’s white text */
-  background-color: #159957; /* Cayman’s green accent */
-  font-size: 1rem;           /* normal size on desktop */
-  white-space: nowrap;       /* keep words intact */
+  color: #fff;
+  background-color: #159957;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
+/* Hover and active states */
 .site-nav a:hover {
-  background-color: #127a45; /* darker green on hover */
+  background-color: #127a45;
 }
 
 .site-nav a.active {
-  background-color: #115c33; /* even darker for active page */
+  background-color: #115c33;
   font-weight: bold;
 }
 
-/* On smaller screens, shrink text and padding so all items fit */
-@media (max-width: 480px) {
-  .site-nav {
-    flex-wrap: nowrap;       /* force single row */
-  }
-  .site-nav a {
-    font-size: 0.8rem;       /* shrink text */
-    padding: 4px 8px;        /* tighter buttons */
-  }
-}
-
-
-
-
+/* Language switcher */
 .lang-switch {
   margin-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 0.9em;
 }
 
@@ -51,7 +42,27 @@
   background: none;
   color: #fff;
   padding: 0;
+  text-decoration: underline;
 }
+
+/* Mobile fix: shrink text and padding to prevent wrapping or scroll */
+@media (max-width: 480px) {
+  .site-nav {
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+  }
+
+  .site-nav a {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .lang-switch {
+    font-size: 0.8em;
+    gap: 4px;
+  }
+}
+
 
 /* Floating sticky back button */
 .project-detail {
