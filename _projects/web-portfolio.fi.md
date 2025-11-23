@@ -5,6 +5,7 @@ category: "Web Development"
 description: "Rakensin kaksikielisen portfoliosivuston Jekyllillä ja mukautetuilla teema-asetuksilla."
 link: "{{ '/fi/projects/web-portfolio/' | relative_url }}"
 lang: fi
+permalink: /fi/projects/web-portfolio/
 ---
 
 # Henkilökohtainen portfoliosivusto
