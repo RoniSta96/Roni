@@ -1,4 +1,3 @@
-
 /* Custom navigation styles for site-nav */
 .site-nav {
   margin-top: 1rem;
@@ -37,29 +36,37 @@
   padding: 0;
 }
 
-.project-detail .back-link {
-  margin-top: 2em;
-  font-size: 0.9em;
-  text-align: center;
+/* Floating sticky back button */
+.project-detail {
+  position: relative; /* ensures sticky positioning works inside article */
 }
 
-.project-detail .back-link a {
-  color: #0366d6; /* Cayman theme blue */
+.project-detail .back-button {
+  position: sticky;
+  top: 1rem;          /* distance from top of viewport */
+  left: 1rem;         /* distance from left of container */
+  z-index: 10;
+}
+
+.project-detail .back-button a {
+  display: inline-block;
+  background-color: #0366d6; /* Cayman theme blue */
+  color: #fff;
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+  font-size: 0.8em;
   text-decoration: none;
   font-weight: 500;
-  position: relative;
-  padding-left: 1.2em; /* space for arrow */
+  opacity: 0.6;       /* semi-transparent by default */
+  transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
-.project-detail .back-link a::before {
-  content: "←";
-  position: absolute;
-  left: 0;
-  color: #0366d6;
+.project-detail .back-button a::before {
+  content: "← ";
   font-weight: bold;
 }
 
-.project-detail .back-link a:hover {
-  text-decoration: underline;
-  color: #024ea2; /* darker hover */
+.project-detail .back-button a:hover {
+  opacity: 1;         /* fully visible on hover */
+  background-color: #024ea2; /* darker hover */
 }
