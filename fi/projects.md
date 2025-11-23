@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Projects
-description: My projects and work
+title: Projektit
+description: Minun projektini
 ---
 
 {% assign grouped = site.projects | where: "lang", "fi" | group_by: "category" %}
