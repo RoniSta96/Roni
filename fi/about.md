@@ -3,18 +3,16 @@ layout: default
 title: Tietoa
 ---
 
-# About Me
+# Vähän minusta
 
-I am a software developer based in Vantaa, Finland.  
-I specialize in building modern web applications with a focus on clean code, usability, and scalability.
+Olen IT-insinööri, jolla on kokemusta terveysteknologian palveluista, ja laitteista. Harrastan vapaa-ajallani kuva- ja videoeditointia, sekä erilaisia projekteja, joista lisää projektit-sivulla. Tällä hetkellä kehitän UI&UX-osaamistani.
 
-**Skills & Technologies:**
+**Taidot ja käyttämäni teknologiat:**
 - Frontend: TypeScript, React, HTML, CSS
 - Backend: Node.js, Express
 - Cloud: Azure
 - Tools: Git, Docker
 
-**Interests:**
-- Creating user‑friendly solutions
-- Exploring cloud‑native architectures
-- Continuous learning and open‑source contributions
+**Minua kiinnostavat:**
+- Käyttäjäystävälliset IT-ratkaisut
+- lisää
