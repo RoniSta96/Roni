@@ -11,4 +11,12 @@ layout: default
   </div>
 
   <p><strong>Category:</strong> {{ page.category }}</p>
+
+  <p class="back-link">
+    {% if page.lang == "en" %}
+      <a href="{{ site.baseurl }}/en/projects.html">← Back to Projects</a>
+    {% elsif page.lang == "fi" %}
+      <a href="{{ site.baseurl }}/fi/projects.html">← Takaisin projekteihin</a>
+    {% endif %}
+  </p>
 </article>
