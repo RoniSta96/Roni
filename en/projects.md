@@ -4,7 +4,7 @@ title: Projects
 description: My projects and work
 ---
 
-{% assign grouped = site.projects | group_by: "category" %}
+{% assign grouped = site.projects | where: "lang", "en" | group_by: "category" %}
 {% for group in grouped %}
   <h2>{{ group.name }}</h2>
   <ul>
@@ -18,3 +18,4 @@ description: My projects and work
     {% endfor %}
   </ul>
 {% endfor %}
+
