@@ -6,7 +6,9 @@
   <a href="{{ site.baseurl }}/en/about.html" class="{% if page_name == "about.html" %}active{% endif %}">About</a>
   <a href="{{ site.baseurl }}/en/contact.html" class="{% if page_name == "contact.html" %}active{% endif %}">Contact</a>
   <span class="lang-switch">
-    {% if page_name == "" or page_name == "index.html" or page_name == "en" %}
+    {% if page.lang_alt %}
+      <a href="{{ page.lang_alt | relative_url }}">🇫🇮 Suomi</a>
+    {% elsif page_name == "" or page_name == "index.html" or page_name == "en" %}
       <a href="{{ site.baseurl }}/fi/">🇫🇮 Suomi</a>
     {% else %}
       <a href="{{ site.baseurl }}/fi/{{ page_name }}">🇫🇮 Suomi</a>
