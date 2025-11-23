@@ -5,6 +5,7 @@ category: "Web Development"
 description: "Built a bilingual portfolio site with Jekyll and custom theme overrides."
 lang: en
 permalink: /en/projects/web-portfolio/
+lang_alt: /fi/projects/web-portfolio/
 ---
 
 # Personal Portfolio Website
