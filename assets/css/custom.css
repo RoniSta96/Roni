@@ -42,8 +42,22 @@
   background: none;
   color: #fff;
   padding: 0;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.lang-switch a:hover {
+  opacity: 1;
   text-decoration: underline;
 }
+
+.lang-switch a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  opacity: 1;
+}
+
 
 /* Mobile navigation fix */
 @media (max-width: 480px) {
