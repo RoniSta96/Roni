@@ -11,9 +11,7 @@ description: My projects and work
     {% for project in group.items %}
       <li>
         <strong>{{ project.title }}</strong> – {{ project.description }}
-        {% if project.link %}
-          <a href="{{ project.link }}">View</a>
-        {% endif %}
+        <a href="{{ project.url | relative_url }}">View</a>
       </li>
     {% endfor %}
   </ul>
