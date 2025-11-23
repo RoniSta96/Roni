@@ -1,36 +1,40 @@
-/* Keep nav items on one row, centered, without wrapping */
+/* Navigation bar */
 .site-nav {
   margin-top: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: center;    /* no extra spacing like space-around */
-  flex-wrap: nowrap;          /* prevent second row */
+  flex-wrap: wrap;          /* allow wrapping if absolutely needed */
+  justify-content: center;  /* keep items centered like before */
   gap: 8px;
-  overflow-x: auto;           /* allow scroll if absolutely needed */
-  -webkit-overflow-scrolling: touch;
 }
 
-/* Do NOT stretch items; keep natural width */
 .site-nav a {
-  flex: 0 0 auto;             /* stops links from spreading across */
-  white-space: nowrap;        /* prevents word wrapping (e.g., "Yhteystiedot") */
-  word-break: keep-all;       /* keep long words intact */
   padding: 6px 12px;
   text-decoration: none;
   border-radius: 4px;
   transition: background 0.3s ease;
-  color: #fff;                /* Cayman’s white text */
-  background-color: #159957;  /* Cayman’s green accent */
+  color: #fff;               /* Cayman’s white text */
+  background-color: #159957; /* Cayman’s green accent */
+  font-size: 1rem;           /* normal size on desktop */
+  white-space: nowrap;       /* prevent breaking long words */
 }
 
 .site-nav a:hover {
-  background-color: #127a45;  /* darker green on hover */
+  background-color: #127a45; /* darker green on hover */
 }
 
 .site-nav a.active {
-  background-color: #115c33;  /* even darker for active page */
+  background-color: #115c33; /* even darker for active page */
   font-weight: bold;
 }
+
+/* On smaller screens, shrink text slightly so long words fit */
+@media (max-width: 480px) {
+  .site-nav a {
+    font-size: 0.85rem;      /* shrink text */
+    padding: 5px 10px;       /* slightly tighter buttons */
+  }
+}
+
 
 /* Tighten spacing on smaller screens to reduce overflow risk */
 @media (max-width: 420px) {
