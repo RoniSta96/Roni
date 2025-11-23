@@ -3,9 +3,9 @@ layout: default
 title: Etusivu
 ---
 
-# Tervetuloa portfolioon
+# Tervetuloa portfoliooni
 
-Meitsi tekee sitä ja sun tätä
+Tässä minun porfoliosivuni. 
 
 ## Projektit
 - **Projekti 1** — Short description, technologies used, [GitHub link](https://github.com/youruser/project1)
