@@ -1,4 +1,5 @@
 ---
+layout: project
 title: "Henkilökohtainen portfoliosivusto"
 category: "Web Development"
 description: "Rakensin kaksikielisen portfoliosivuston Jekyllillä ja mukautetuilla teema-asetuksilla."
