@@ -1,8 +1,8 @@
 ---
 layout: project
-title: "Henkilökohtainen portfoliosivusto"
+title: "Projektit"
 category: "Web Development"
-description: "Rakensin kaksikielisen portfoliosivuston Jekyllillä ja mukautetuilla teema-asetuksilla."
+description: "Henkilökohtainen portfoliosivusto"
 lang: fi
 permalink: /fi/projects/web-portfolio/
 lang_alt: /en/projects/web-portfolio/
