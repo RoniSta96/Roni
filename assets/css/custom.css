@@ -73,13 +73,15 @@
 
 /* Animated gradient background for Cayman header */
 .page-header {
-  background: linear-gradient(270deg, #159957, #155799);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  background: linear-gradient(270deg, #159957, #155799, #159957);
+  background-size: 200% 200%;
+  animation: gradientWave 10s ease infinite;
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+@keyframes gradientWave {
+  0%   { background-position: 0% 50%; }
+  25%  { background-position: 50% 50%; }
+  50%  { background-position: 100% 50%; }
+  75%  { background-position: 50% 50%; }
   100% { background-position: 0% 50%; }
 }
