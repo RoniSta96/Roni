@@ -5,6 +5,7 @@ category: "Web Development"
 description: "Rakensin kaksikielisen portfoliosivuston Jekyllillä ja mukautetuilla teema-asetuksilla."
 lang: fi
 permalink: /fi/projects/web-portfolio/
+lang_alt: /en/projects/web-portfolio/
 ---
 
 # Henkilökohtainen portfoliosivusto
