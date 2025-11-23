@@ -1,8 +1,8 @@
 ---
 layout: project
-title: "Personal Portfolio Website"
+title: "Projects"
 category: "Web Development"
-description: "Built a bilingual portfolio site with Jekyll and custom theme overrides."
+description: "Personal Portfolio Website"
 lang: en
 permalink: /en/projects/web-portfolio/
 lang_alt: /fi/projects/web-portfolio/
