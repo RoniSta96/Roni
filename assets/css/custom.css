@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-} 
+}
 
 /* Nav links */
 .site-nav a {
@@ -58,27 +58,26 @@
   opacity: 1;
 }
 
-
-/* Mobile navigation fix */
+/* Mobile fix: shrink text and padding, keep horizontal layout */
 @media (max-width: 480px) {
   .site-nav {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 6px;
   }
 
   .site-nav a {
-    font-size: 0.9rem;
-    padding: 6px 10px;
-    width: 100%;
-    text-align: center;
+    font-size: 0.8rem;
+    padding: 4px 8px;
   }
 
   .lang-switch {
+    font-size: 0.8em;
+    gap: 4px;
     margin-top: 0.5rem;
-    justify-content: center;
-    font-size: 0.8rem;
   }
+}
+
 
   .page-header {
     padding: 1rem;
