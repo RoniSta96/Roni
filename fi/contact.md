@@ -14,4 +14,4 @@ Perehtykää projekteihini ja ottakaa rohkeasti yhteyttä! Olen avoin erilaisill
 
 ---
 
-Muistakaa seurata minua LinkedInissä, seuraan aina takaisin!
+Muistakaa seurata minua myös LinkedInissä
