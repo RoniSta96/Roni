@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Yhteystiedot
+description: Saatte minut kiinni täältä
 ---
 
 # Yhteystiedot
