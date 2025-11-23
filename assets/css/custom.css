@@ -36,3 +36,30 @@
   color: #fff;
   padding: 0;
 }
+
+.project-detail .back-link {
+  margin-top: 2em;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.project-detail .back-link a {
+  color: #0366d6; /* Cayman theme blue */
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-left: 1.2em; /* space for arrow */
+}
+
+.project-detail .back-link a::before {
+  content: "←";
+  position: absolute;
+  left: 0;
+  color: #0366d6;
+  font-weight: bold;
+}
+
+.project-detail .back-link a:hover {
+  text-decoration: underline;
+  color: #024ea2; /* darker hover */
+}
