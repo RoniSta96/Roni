@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+description: IT-professional with experience in health technology, customer success and programming
 ---
 
 # About Me
