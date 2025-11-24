@@ -20,7 +20,7 @@ You can find more about me on the About page and my contact information on the c
   </div>
   <div class="intro-text">
     <h1>Hi, I'm Roni Ståhl</h1>
-    <p>ICT Engineer specialized in health technology and automation, blending technical rigor with creative initiative.</p>
+    <p>ICT Engineer specialized in health technology.</p>
   </div>
 </div>
 
