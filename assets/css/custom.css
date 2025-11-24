@@ -207,3 +207,33 @@
 .project-actions .btn:hover {
   background-color: #024ea2;
 }
+
+.profile-img {
+  display: block;
+  max-width: 200px;       /* default size on desktop */
+  width: 100%;            /* scales down on smaller screens */
+  height: auto;           /* keeps aspect ratio */
+  border-radius: 50%;     /* circular crop */
+  margin: 1rem auto;      /* centers the image */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Larger size on big screens */
+@media (min-width: 768px) {
+  .profile-img {
+    max-width: 250px;
+  }
+}
+
+/* Smaller size on very narrow screens */
+@media (max-width: 480px) {
+  .profile-img {
+    max-width: 150px;
+  }
+}
