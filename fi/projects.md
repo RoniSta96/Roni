@@ -2,6 +2,8 @@
 layout: default
 title: Projektit
 description: Minun projektini
+lang: fi
+smallprojects_data: smallprojects_fi
 ---
 
 {% assign grouped = site.projects | where: "lang", "fi" | group_by: "category" %}
@@ -18,9 +20,10 @@ description: Minun projektini
   </ul>
 {% endfor %}
 
-<h2>Pienet projektit</h2>
+<h2>{% if page.lang == "fi" %}Pienet projektit{% else %}Small Projects{% endif %}</h2>
 <ul class="projects-list">
-  {% for project in site.data.smallprojects.fi %}
+  {% assign datafile = site.data[page.smallprojects_data] %}
+  {% for project in datafile %}
     <li class="project-card">
       <div class="project-content">
         <strong>{{ project.title }}</strong>
@@ -33,7 +36,9 @@ description: Minun projektini
         {% endif %}
 
         <div class="project-actions">
-          <a href="{{ project.link }}" target="_blank" class="btn">Avaa selaimessa</a>
+          <a href="{{ project.link }}" target="_blank" class="btn">
+            {% if page.lang == "fi" %}Avaa selaimessa{% else %}Open in Browser{% endif %}
+          </a>
         </div>
       </div>
     </li>
