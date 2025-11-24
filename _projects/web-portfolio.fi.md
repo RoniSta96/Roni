@@ -1,8 +1,8 @@
 ---
 layout: project
-title: "Projektit"
+title: "Henkilökohtainen portfoliosivusto"
 category: "Web Development"
-description: "Henkilökohtainen portfoliosivusto"
+description: "Portfolio-sivusto, jolla voin esitellä töitäni"
 lang: fi
 permalink: /fi/projects/web-portfolio/
 lang_alt: /en/projects/web-portfolio/
