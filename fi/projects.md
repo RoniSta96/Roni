@@ -17,3 +17,25 @@ description: Minun projektini
     {% endfor %}
   </ul>
 {% endfor %}
+
+<h2>Small Projects</h2>
+<ul class="projects-list">
+  {% for project in site.data.smallprojects %}
+    <li class="project-card">
+      <div class="project-content">
+        <strong>{{ project.title }}</strong>
+        <p>{{ project.description }}</p>
+
+        {% if project.embed %}
+          <div class="project-embed">
+            <iframe src="{{ project.embed }}" allowfullscreen></iframe>
+          </div>
+        {% endif %}
+
+        <div class="project-actions">
+          <a href="{{ project.link }}" target="_blank" class="btn">Open in Browser</a>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
