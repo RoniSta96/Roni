@@ -13,3 +13,6 @@ I build modern web applications and enjoy working with clean code, usability, an
 On the projects page you can shuffle through my projects which consist of web design, photo and video etc. I update it reguralarly.
 
 You can find more about me on the About page and my contact information on the contact page.
+
+![Roni Ståhl](assets/images/roni.jpg){: .profile-img }
+
