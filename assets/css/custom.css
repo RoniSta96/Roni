@@ -221,15 +221,17 @@
 
 /* Image container */
 .intro-image {
-  flex: 0 0 auto;
+  flex: 0 0 auto;           /* don’t let image stretch */
 }
 
+/* Profile image */
 .profile-img {
   display: block;
-  width: 100%;
-  max-width: 180px;       /* cap size */
+  max-width: 160px;         /* cap size */
+  width: auto;              /* prevent full-width stretch */
   height: auto;
   border-radius: 50%;
+  margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -241,20 +243,21 @@
 
 /* Text container */
 .intro-text {
-  flex: 1;
+  flex: 1;                  /* text takes remaining space */
   text-align: center;
+  min-width: 0;             /* prevents overflow squeeze */
 }
 
 /* Desktop: side-by-side */
 @media (min-width: 768px) {
   .intro-section {
-    flex-direction: row;   /* side by side */
+    flex-direction: row;    /* side by side */
     align-items: center;
     text-align: left;
   }
 
   .intro-text {
     text-align: left;
+    padding-left: 1rem;     /* breathing room between image and text */
   }
 }
-
