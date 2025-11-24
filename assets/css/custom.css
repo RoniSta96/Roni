@@ -208,13 +208,28 @@
   background-color: #024ea2;
 }
 
+/* Intro section layout */
+.intro-section {
+  display: flex;
+  flex-direction: column;   /* stack on mobile */
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+/* Image container */
+.intro-image {
+  flex: 0 0 auto;
+}
+
 .profile-img {
   display: block;
-  max-width: 200px;       /* default size on desktop */
-  width: 100%;            /* scales down on smaller screens */
-  height: auto;           /* keeps aspect ratio */
-  border-radius: 50%;     /* circular crop */
-  margin: 1rem auto;      /* centers the image */
+  width: 100%;
+  max-width: 180px;       /* cap size */
+  height: auto;
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -224,16 +239,22 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
-/* Larger size on big screens */
+/* Text container */
+.intro-text {
+  flex: 1;
+  text-align: center;
+}
+
+/* Desktop: side-by-side */
 @media (min-width: 768px) {
-  .profile-img {
-    max-width: 250px;
+  .intro-section {
+    flex-direction: row;   /* side by side */
+    align-items: center;
+    text-align: left;
+  }
+
+  .intro-text {
+    text-align: left;
   }
 }
 
-/* Smaller size on very narrow screens */
-@media (max-width: 480px) {
-  .profile-img {
-    max-width: 150px;
-  }
-}
