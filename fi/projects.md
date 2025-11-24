@@ -18,9 +18,9 @@ description: Minun projektini
   </ul>
 {% endfor %}
 
-<h2>Small Projects</h2>
+<h2>Pienet projektit</h2>
 <ul class="projects-list">
-  {% for project in site.data.smallprojects %}
+  {% for project in site.data.smallprojects.fi %}
     <li class="project-card">
       <div class="project-content">
         <strong>{{ project.title }}</strong>
@@ -33,9 +33,10 @@ description: Minun projektini
         {% endif %}
 
         <div class="project-actions">
-          <a href="{{ project.link }}" target="_blank" class="btn">Open in Browser</a>
+          <a href="{{ project.link }}" target="_blank" class="btn">Avaa selaimessa</a>
         </div>
       </div>
     </li>
   {% endfor %}
 </ul>
+
