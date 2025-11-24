@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tietoa
-description: IT-moniosaaja
+description: IT-ammattilainen, jolla on kokemusta terveysteknologiasta, asiakastyytyväisyydestä ja ohjelmoinnista
 ---
 
 # Vähän minusta
@@ -9,11 +9,11 @@ description: IT-moniosaaja
 Olen IT-insinööri, jolla on kokemusta terveysteknologian palveluista, ja laitteista. Harrastan vapaa-ajallani kuva- ja videoeditointia, sekä erilaisia projekteja, joista lisää projektit-sivulla. Tällä hetkellä kehitän UI&UX-osaamistani.
 
 **Taidot ja käyttämäni teknologiat:**
-- Frontend: TypeScript, React, HTML, CSS
-- Backend: Node.js, Express
+- Frontend: HTML, CSS
+- Backend: 
 - Cloud: Azure
-- Tools: Git, Docker
+- Tools: Git
 
 **Minua kiinnostavat:**
 - Käyttäjäystävälliset IT-ratkaisut
-- lisää
+
