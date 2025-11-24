@@ -6,16 +6,6 @@ description: Roni Ståhl Portfolio
 
 # Tervetuloa portfoliooni
 
-Tässä minun porfoliosivuni. 
-
-## Projektit
-- **Projekti 1** — Short description, technologies used, [GitHub link](https://github.com/youruser/project1)
-- **Projekti 2** — Short description, demo link
-
-## Minusta
-I am a software developer based in Vantaa, Finland. My main interests are front‑end development, cloud services, and creating user‑friendly solutions.  
-Technologies I work with: TypeScript, React, Node.js, Azure.
-
-## Yhteystiedot
-- Email: [firstname.lastname@example.com](mailto:firstname.lastname@example.com)  
-- LinkedIn: [Profile](https://linkedin.com/in/yourprofile)
+Hei! Olen Roni Ståhl ja tämä on Portfolio-sivustoni. Rakennan moderneja verkkosovelluksia ja nautin työskentelystä selkeän koodin, käytettävyyden ja vahvan toteutuksen parissa.
+Projektit-sivulla voit selata töitäni, jotka koostuvat muun muassa web-suunnittelusta, valokuvista ja videoista. Päivitän sivua säännöllisesti.
+Lisätietoa minusta löydät Tietoa-sivulta ja yhteystietoni Yhteystiedot-sivulta.
