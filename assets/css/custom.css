@@ -211,7 +211,7 @@
 /* Intro section layout */
 .intro-section {
   display: flex;
-  flex-direction: column;   /* stack on mobile */
+  flex-direction: column;    /* mobile: stacked */
   align-items: center;
   gap: 1.5rem;
   margin: 2rem auto;
@@ -219,17 +219,25 @@
   padding: 0 1rem;
 }
 
-/* Image container */
-.intro-image {
-  flex: 0 0 auto;
-  max-width: 200px;         /* cap image container width */
+/* Desktop: side-by-side with fixed image column */
+@media (min-width: 768px) {
+  .intro-section {
+    flex-direction: row;     /* desktop: side by side */
+    align-items: center;
+  }
 }
 
-/* Profile image */
+/* Image column: fixed width so it can't hog space */
+.intro-image {
+  flex: 0 0 200px;           /* fixed column width */
+  max-width: 200px;
+}
+
+/* Profile image: fill its small column only */
 .profile-img {
   display: block;
-  width: 100%;              /* fill its small container */
-  max-width: 200px;         /* cap size */
+  width: 100%;               /* fill the 200px column */
+  max-width: 200px;
   height: auto;
   border-radius: 50%;
   margin: 0 auto;
@@ -242,24 +250,19 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
-/* Text container */
+/* Text column: takes the rest, never collapses */
 .intro-text {
-  flex: 1;                  /* take remaining space */
+  flex: 1 1 0;               /* grow and shrink properly */
+  min-width: 320px;          /* safeguard against “one-letter columns” */
   text-align: center;
-  min-width: 300px;         /* safeguard: never collapse below 300px */
 }
 
-/* Desktop: side-by-side */
+/* Desktop text alignment and spacing */
 @media (min-width: 768px) {
-  .intro-section {
-    flex-direction: row;    /* side by side */
-    align-items: center;
-    text-align: left;
-  }
-
   .intro-text {
     text-align: left;
-    padding-left: 1rem;     /* breathing room between image and text */
+    padding-left: 1rem;      /* space between image and text */
   }
 }
+
 
