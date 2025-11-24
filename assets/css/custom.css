@@ -221,14 +221,15 @@
 
 /* Image container */
 .intro-image {
-  flex: 0 0 auto;           /* don’t let image stretch */
+  flex: 0 0 auto;
+  max-width: 200px;         /* cap image container width */
 }
 
 /* Profile image */
 .profile-img {
   display: block;
-  max-width: 160px;         /* cap size */
-  width: auto;              /* prevent full-width stretch */
+  width: 100%;              /* fill its small container */
+  max-width: 200px;         /* cap size */
   height: auto;
   border-radius: 50%;
   margin: 0 auto;
@@ -243,9 +244,9 @@
 
 /* Text container */
 .intro-text {
-  flex: 1;                  /* text takes remaining space */
+  flex: 1;                  /* take remaining space */
   text-align: center;
-  min-width: 0;             /* prevents overflow squeeze */
+  min-width: 300px;         /* safeguard: never collapse below 300px */
 }
 
 /* Desktop: side-by-side */
@@ -261,3 +262,4 @@
     padding-left: 1rem;     /* breathing room between image and text */
   }
 }
+
