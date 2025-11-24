@@ -1,8 +1,8 @@
 ---
 layout: project
-title: "Projects"
+title: "Personal Portfolio Website"
 category: "Web Development"
-description: "Personal Portfolio Website"
+description: "Portfolio website to display my work and projects"
 lang: en
 permalink: /en/projects/web-portfolio/
 lang_alt: /fi/projects/web-portfolio/
