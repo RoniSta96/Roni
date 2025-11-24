@@ -11,7 +11,7 @@ description: My projects and work
     {% for project in group.items %}
       <li>
         <a href="{{ project.url | relative_url }}" class="project-card">
-          <strong>{{ project.title }}</strong> – {{ project.description }}
+          <strong>{{ project.title }}</strong>   {{ project.description }}
         </a>
       </li>
     {% endfor %}
