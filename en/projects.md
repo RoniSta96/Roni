@@ -21,11 +21,22 @@ description: My projects and work
 <h2>Small Projects</h2>
 <ul class="projects-list">
   {% for project in site.data.smallprojects %}
-    <li>
-      <a href="{{ project.link }}" class="project-card" target="_blank">
+    <li class="project-card">
+      <div class="project-content">
         <strong>{{ project.title }}</strong>
         <p>{{ project.description }}</p>
-      </a>
+
+        {% if project.embed %}
+          <div class="project-embed">
+            <iframe src="{{ project.embed }}" allowfullscreen></iframe>
+          </div>
+        {% endif %}
+
+        <div class="project-actions">
+          <a href="{{ project.link }}" target="_blank" class="btn">Open in Browser</a>
+        </div>
+      </div>
     </li>
   {% endfor %}
 </ul>
+
