@@ -14,5 +14,5 @@ On the projects page you can shuffle through my projects which consist of web de
 
 You can find more about me on the About page and my contact information on the contact page.
 
-![Roni Ståhl](assets/images/roni.jpg){: .profile-img }
+![Roni Ståhl](assets/images/roni.png){: .profile-img }
 
