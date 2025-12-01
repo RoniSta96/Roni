@@ -13,7 +13,7 @@ Currently I am working on my first large programming project; music social media
 
 You can follow my music projects on my contact page. I've been playing in bands for the past 10+ years. My current projects are a funky country rock band Psykentucky and proggy finnish rock band Walleri. We are preparing for new releases soon. Also I'll be releasing our first merchandise for Psykentucky soon. Follow us on Instagram for the latest releases.
 
-I've only resently published this Portfolio page so there are bunch of projects and information missing still. You can contact me through the contact page for any questions, improvement suggestions or job offers.
+I've only recently published this Portfolio page so there are bunch of projects and information missing still. You can contact me through the contact page for any questions, improvement suggestions or job offers.
 
 **Skills & Technologies:**
 - Frontend: HTML, CSS
