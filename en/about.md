@@ -11,7 +11,7 @@ In my freetime I carry out lot's of various projects which I plan to update here
 
 Currently I am working on my first large programming project; music social media app in the style of Pinterest. Right now I am working on the Figma designs and at the same time studying user experiences and user interface design. You can follow the process on this page and on Github.
 
-You can follow my music projects on my contact page. I've been playing in bands for the past 10+ years. My current projects are a funky country rock band Psykentucky and proggy finnish rock band Walleri. We are preparing for new releases soon. Also I'll be releasing our first merchandise for Psykentucky soon. Follow us on Instagram for the latest releases.
+I also play music in addition to web design and programming projects. You can find links to my music projects on the contacts page. I compose, edit music videos, organize social media and marketing, book gigs and so on. 
 
 I've only recently published this Portfolio page so there are bunch of projects and information missing still. You can contact me through the contact page for any questions, improvement suggestions or job offers.
 
