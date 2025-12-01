@@ -17,7 +17,7 @@ description: Roni Ståhl Portfolio
 
     <p>On the projects page you can shuffle through my projects which consist of web design, photo and video editing etc. I update it regularly.</p>
 
-    <p>You can find more about me on the About page and my contact information on the contact page.</p>
+    <p>You can find more about me and my work on the About page and reach me through the contact page.</p>
   </div>
 </div>
 
